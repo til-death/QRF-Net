@@ -16,7 +16,7 @@ This repository contains the main experiments on **MNIST**, **Fashion-MNIST**, a
 
 
 <p align="center">
-  <img src="figures/qrf_net_architecture.svg" width="100%" alt="QRF-Net architecture">
+  <img src="figures/qrf_net_architecture.svg" width="100%" alt="qrf_net_architecture">
 </p>
 
 <p align="center"><b>QRF-Net overall architecture.</b></p>
@@ -29,7 +29,7 @@ QRF-Net contains three main components:
 ## Quantum Participation Paths
 
 <p align="center">
-  <img src="figures/quantum_paths.svg" width="90%" alt="Quantum participation paths">
+  <img src="figures/quantum_paths.svg" width="90%" alt="quantum_paths">
 </p>
 
 <p align="center"><b>Comparison of classical, pure quantum, and QRF-Net hybrid paths.</b></p>
