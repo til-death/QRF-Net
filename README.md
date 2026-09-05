@@ -14,25 +14,25 @@ This repository contains the main experiments on **MNIST**, **Fashion-MNIST**, a
 
 ## Overview
 
+
 <p align="center">
-  <img src="figures/qrf_net_architecture.svg" width="100%">
+  <img src="figures/qrf_net_architecture.svg" width="100%" alt="QRF-Net architecture">
 </p>
 
 <p align="center"><b>QRF-Net overall architecture.</b></p>
 
 QRF-Net contains three main components:
+1. a lightweight CNN for local feature extraction;
+2. a parameterized quantum readout branch operating on low-dimensional bottleneck features;
+3. a class-wise gated logit residual fusion module.
 
-1. **Classical feature extraction** — a lightweight CNN extracts local image structure and projects it to a compact bottleneck representation.
-2. **Quantum readout branch** — angle encoding, a parameterized quantum circuit, data re-uploading, and multi-observable Pauli-Z readout construct a low-dimensional complementary representation.
-3. **Gated logit residual fusion** — the quantum branch provides a bounded residual correction to the classical logits rather than replacing the classical classifier.
-
-### Quantum participation paths
+## Quantum Participation Paths
 
 <p align="center">
-  <img src="figures/quantum_paths.png" width="850" alt="Classical, pure quantum and QRF-Net paths">
+  <img src="figures/quantum_paths.svg" width="90%" alt="Quantum participation paths">
 </p>
 
-<p align="center"><b>Comparison of classical, pure-quantum, and QRF-Net participation paths.</b></p>
+<p align="center"><b>Comparison of classical, pure quantum, and QRF-Net hybrid paths.</b></p>
 
 The experiments compare three types of participation patterns: a classical CNN path, a pure quantum path, and the proposed QRF-Net hybrid path. This design is used to distinguish the role of the quantum module as an independent classifier from its role as a complementary residual branch.
 
