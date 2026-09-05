@@ -15,7 +15,7 @@ This repository contains the main experiments on **MNIST**, **Fashion-MNIST**, a
 ## Overview
 
 <p align="center">
-  <img src="figures/qrf_net_architecture.png" width="1000" alt="QRF-Net architecture">
+  <img src="figures/qrf_net_architecture.svg" width="100%">
 </p>
 
 <p align="center"><b>QRF-Net overall architecture.</b></p>
